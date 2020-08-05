@@ -4,6 +4,7 @@ include '../function.php';
 session_start();
 sessionSupplier();
 activityLog(urlTrack());
+$supplierID = decodeURL($_SESSION['supplierID']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,57 +58,15 @@ activityLog(urlTrack());
                             <div class="card o-hidden  widget-cards">
                                 <div class="bg-secondary card-body">
                                     <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Products</span>
-                                            <h3 class="mb-0">$ <span class="counter">9856</span><small> This
-                                                    Month</small></h3>
+                                        <div class="media-body"><span class="m-0">Jumlah Produk</span>
+                                            <h3 class="mb-0">
+                                                <span class="counter">
+                                                    <?= jumlahProduct($supplierID) ?>
+                                                </span>
+                                            </h3>
                                         </div>
                                         <div class="icons-widgets">
                                             <i data-feather="box"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 xl-50">
-                            <div class="card o-hidden widget-cards">
-                                <div class="bg-primary card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Messages</span>
-                                            <h3 class="mb-0">$ <span class="counter">893</span><small> This
-                                                    Month</small></h3>
-                                        </div>
-                                        <div class="icons-widgets">
-                                            <i data-feather="message-square"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 xl-50">
-                            <div class="card o-hidden widget-cards">
-                                <div class="bg-warning card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Earnings</span>
-                                            <h3 class="mb-0">$ <span class="counter">6659</span><small> This
-                                                    Month</small></h3>
-                                        </div>
-                                        <div class="icons-widgets">
-                                            <i data-feather="navigation"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 xl-50">
-                            <div class="card o-hidden widget-cards">
-                                <div class="bg-success card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">New Vendors</span>
-                                            <h3 class="mb-0">$ <span class="counter">45631</span><small> This
-                                                    Month</small></h3>
-                                        </div>
-                                        <div class="icons-widgets">
-                                            <i data-feather="users"></i>
                                         </div>
                                     </div>
                                 </div>

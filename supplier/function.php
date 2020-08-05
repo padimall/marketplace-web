@@ -193,3 +193,14 @@ function rupiah($angka)
     $hasil_rupiah = "Rp " . number_format($angka, 2, ',', '.');
     return $hasil_rupiah;
 }
+
+function jumlahProduct($supplierID)
+{
+    global $pdo;
+
+    $query = "SELECT COUNT(id) AS jumlahProduct FROM product WHERE status = 1 AND supplier_id ='$supplierID'";
+    $sql = $pdo->prepare($query);
+    $sql->execute();
+    $data = $sql->fetch(PDO::FETCH_ASSOC);
+    return $data['jumlahProduct'];
+}
