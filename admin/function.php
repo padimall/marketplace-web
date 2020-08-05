@@ -169,10 +169,10 @@ function redirect($url)
     die();
 }
 
-function sessionSupplier()
+function sessionAdministrator()
 {
-    $supplierStatus = decodeURL(($_SESSION['supplier_status']));
-    if ($supplierStatus != "login") {
+    $adminStatus = decodeURL(($_SESSION['admin_status']));
+    if ($adminStatus != "login") {
         redirect('../auth');
     }
 }
@@ -192,4 +192,26 @@ function rupiah($angka)
 
     $hasil_rupiah = "Rp " . number_format($angka, 2, ',', '.');
     return $hasil_rupiah;
+}
+
+function jumlahProduct()
+{
+    global $pdo;
+
+    $query = "SELECT COUNT(id) AS jumlahProduct FROM product WHERE status = 1";
+    $sql = $pdo->prepare($query);
+    $sql->execute();
+    $data = $sql->fetch(PDO::FETCH_ASSOC);
+    return $data['jumlahProduct'];
+}
+
+function jumlahSupplier()
+{
+    global $pdo;
+
+    $query = "SELECT COUNT(id) AS jumlahSupplier FROM supplier WHERE status = 1";
+    $sql = $pdo->prepare($query);
+    $sql->execute();
+    $data = $sql->fetch(PDO::FETCH_ASSOC);
+    return $data['jumlahSupplier'];
 }

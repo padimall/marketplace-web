@@ -1,5 +1,6 @@
 <?php
 include 'process.php';
+activityLog(urlTrack());
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,9 +158,6 @@ include 'process.php';
                                     <li class="nav-item">
                                         <a class="nav-link active" id="top-profile-tab" data-toggle="tab" href="#top-profile" role="tab" aria-controls="top-profile" aria-selected="true"><span class="icon-user mr-2"></span>Login</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="contact-top-tab" data-toggle="tab" href="#top-contact" role="tab" aria-controls="top-contact" aria-selected="false"><span class="icon-unlock mr-2"></span>Register</a>
-                                    </li>
                                 </ul>
                                 <div class="tab-content" id="top-tabContent">
                                     <div class="tab-pane fade show active" id="top-profile" role="tabpanel" aria-labelledby="top-profile-tab">
@@ -175,53 +173,11 @@ include 'process.php';
                                                 }
                                                 ?>
                                             </div>
-                                            <div class="form-terms">
-                                                <div class="custom-control custom-checkbox mr-sm-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                                    <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
-                                                    <!-- <a href="#" class="btn btn-default forgot-pass">lost your password</a> -->
-                                                </div>
-                                            </div>
                                             <div class="form-button">
-                                                <button class="btn btn-primary" type="submit" name="btnLogin">Login</button>
+                                                <button class="btn btn-primary btn-block" type="submit" name="btnLogin">Login</button>
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="tab-pane fade" id="top-contact" role="tabpanel" aria-labelledby="contact-top-tab">
-                                        <form class="form-horizontal auth-form" method="POST" action="process">
-                                            <div class="form-group">
-                                                <input required="" name="username" type="text" class="form-control" placeholder="Username">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="password" type="password" class="form-control" placeholder="Password" id="password">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="confirm_password" type="password" class="form-control" placeholder="Confirm Password" id=confirm_password>
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="nama_toko" type="text" class="form-control" placeholder="Nama Toko">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="nib" type="text" class="form-control" placeholder="NIB">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="alamat" type="text" class="form-control" placeholder="Alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="email" type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="phone" type="text" class="form-control" placeholder="Phone Number">
-                                            </div>
-                                            <div class="form-group">
-                                                <input required="" name="slogan" type="text" class="form-control" placeholder="Slogan Toko">
-                                            </div>
-                                            <div class="form-button">
-                                                <button class="btn btn-primary btn-block" type="submit" name="btnRegister" id="btnRegister">Register</button>
-                                            </div>
-                                        </form>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>

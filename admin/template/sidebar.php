@@ -1,15 +1,39 @@
 <div class="page-sidebar">
     <div class="sidebar custom-scrollbar">
         <div class="sidebar-user text-center">
-            <div>
-                <!-- <img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/images/dashboard/man.png" alt="#"> -->
-                <img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/images/dashboard/man.png" alt="#">
-            </div>
-            <h6 class="mt-3 f-14"><?= decodeURL($_SESSION['nama_toko']) ?></h6>
-            <p><?= decodeURL($_SESSION['email']) ?></p>
+            <h6 class="mt-3 f-14"><?= decodeURL($_SESSION['username']) ?></h6>
+            <!-- <p><?= decodeURL($_SESSION['email']) ?></p> -->
         </div>
         <ul class="sidebar-menu">
-            <li><a class="sidebar-header" href="index"><i data-feather="home"></i><span>Dashboard</span></a></li>
+            <li>
+                <a class="sidebar-header" href="../dashboard/">
+                    <i data-feather="home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a class="sidebar-header" href="#">
+                    <i data-feather="box"></i>
+                    <span>Produk</span>
+                    <i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="../produk"><i class="fa fa-circle"></i>
+                            <span>Daftar Produk</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="sidebar-header" href="">
+                    <i data-feather="users"></i>
+                    <span>Supplier</span><i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li><a href="../supplier"><i class="fa fa-circle"></i>Daftar Supplier</a></li>
+                </ul>
+            </li>
             <!-- <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Products</span><i class="fa fa-angle-right pull-right"></i></a>
                 <ul class="sidebar-submenu">
                     <li>
@@ -96,7 +120,7 @@
             </li>
             <li><a class="sidebar-header" href="invoice.html"><i data-feather="archive"></i><span>Invoice</span></a>
             </li> -->
-            <li><a class="sidebar-header" href="login.html"><i data-feather="log-in"></i><span>Logout</span></a>
+            <li><a class="sidebar-header" href="../auth/logout"><i data-feather="log-in"></i><span>Logout</span></a>
             </li>
         </ul>
     </div>

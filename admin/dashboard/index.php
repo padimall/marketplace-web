@@ -2,6 +2,7 @@
 include '../../config.php';
 include '../function.php';
 session_start();
+sessionAdministrator();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +33,7 @@ session_start();
                             <div class="col-lg-6">
                                 <div class="page-header-left">
                                     <h3>Dashboard
-                                        <small>Padi Mall Supplier Panel</small>
+                                        <small>Padi Mall Administrator Panel</small>
                                     </h3>
                                 </div>
                             </div>
@@ -55,9 +56,12 @@ session_start();
                             <div class="card o-hidden  widget-cards">
                                 <div class="bg-secondary card-body">
                                     <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Products</span>
-                                            <h3 class="mb-0">$ <span class="counter">9856</span><small> This
-                                                    Month</small></h3>
+                                        <div class="media-body"><span class="m-0">Jumlah Produk</span>
+                                            <h3 class="mb-0">
+                                                <span class="counter">
+                                                    <?= jumlahProduct() ?>
+                                                </span>
+                                            </h3>
                                         </div>
                                         <div class="icons-widgets">
                                             <i data-feather="box"></i>
@@ -68,41 +72,14 @@ session_start();
                         </div>
                         <div class="col-xl-3 col-md-6 xl-50">
                             <div class="card o-hidden widget-cards">
-                                <div class="bg-primary card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Messages</span>
-                                            <h3 class="mb-0">$ <span class="counter">893</span><small> This
-                                                    Month</small></h3>
-                                        </div>
-                                        <div class="icons-widgets">
-                                            <i data-feather="message-square"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 xl-50">
-                            <div class="card o-hidden widget-cards">
-                                <div class="bg-warning card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">Earnings</span>
-                                            <h3 class="mb-0">$ <span class="counter">6659</span><small> This
-                                                    Month</small></h3>
-                                        </div>
-                                        <div class="icons-widgets">
-                                            <i data-feather="navigation"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 xl-50">
-                            <div class="card o-hidden widget-cards">
                                 <div class="bg-success card-body">
                                     <div class="media static-top-widget">
-                                        <div class="media-body"><span class="m-0">New Vendors</span>
-                                            <h3 class="mb-0">$ <span class="counter">45631</span><small> This
-                                                    Month</small></h3>
+                                        <div class="media-body"><span class="m-0">Jumlah Supplier</span>
+                                            <h3 class="mb-0">
+                                                <span class="counter">
+                                                    <?= jumlahSupplier() ?>
+                                                </span>
+                                            </h3>
                                         </div>
                                         <div class="icons-widgets">
                                             <i data-feather="users"></i>

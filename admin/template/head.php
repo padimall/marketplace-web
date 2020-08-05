@@ -5,7 +5,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
-    <title>PadiMall - Supplier</title>
+    <title>PadiMall - Administrator</title>
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -16,6 +16,19 @@
 
     <!-- Flag icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+
+    <!-- Datatable css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.css">
+
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+
+    <!-- owlcarousel css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/owlcarousel.css">
+
+    <!-- Rating css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/rating.css">
+
 
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
