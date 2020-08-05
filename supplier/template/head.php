@@ -17,6 +17,19 @@
     <!-- Flag icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
 
+    <!-- Datatable css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.css">
+
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+
+    <!-- owlcarousel css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/owlcarousel.css">
+
+    <!-- Rating css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/rating.css">
+
+
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
 

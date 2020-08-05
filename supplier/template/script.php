@@ -12,9 +12,21 @@
 <!-- Sidebar jquery-->
 <script src="../assets/js/sidebar-menu.js"></script>
 
+<!-- Rating Js-->
+<script src="../assets/js/rating/jquery.barrating.js"></script>
+<script src="../assets/js/rating/rating-script.js"></script>
+
 <!--chartist js-->
 <script src="../assets/js/chart/chartist/chartist.js"></script>
 
+<!-- touchspin js-->
+<script src="../assets/js/touchspin/vendors.min.js"></script>
+<script src="../assets/js/touchspin/touchspin.js"></script>
+<script src="../assets/js/touchspin/input-groups.min.js"></script>
+
+<!-- Owlcarousel js-->
+<script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+<script src="../assets/js/dashboard/product-carousel.js"></script>
 
 <!-- lazyload js-->
 <script src="../assets/js/lazysizes.min.js"></script>
@@ -47,6 +59,10 @@
 <!--dashboard custom js-->
 <script src="../assets/js/dashboard/default.js"></script>
 
+<!-- Datatables js-->
+<script src="../assets/js/datatables/jquery.dataTables.min.js"></script>
+<script src="../assets/js/datatables/custom-basic.js"></script>
+
 <!--right sidebar js-->
 <script src="../assets/js/chat-menu.js"></script>
 
@@ -58,3 +74,8 @@
 
 <!--script admin-->
 <script src="../assets/js/admin-script.js"></script>
+
+<script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
+<script src="../assets/js/editor/ckeditor/styles.js"></script>
+<script src="../assets/js/editor/ckeditor/adapters/jquery.js"></script>
+<script src="../assets/js/editor/ckeditor/ckeditor.custom.js"></script>

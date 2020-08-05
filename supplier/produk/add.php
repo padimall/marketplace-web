@@ -1,7 +1,7 @@
 <?php
+session_start();
 include '../../config.php';
 include '../function.php';
-session_start();
 sessionSupplier();
 activityLog(urlTrack());
 ?>
@@ -60,7 +60,7 @@ activityLog(urlTrack());
                 <!-- Container-fluid starts-->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <div class="card">
                                 <!-- <div class="card-header">
                                     <h5>Add Product</h5>
@@ -71,19 +71,33 @@ activityLog(urlTrack());
                                             <form class="needs-validation add-product-form" method="POST" action="process" enctype="multipart/form-data">
                                                 <div class="form">
                                                     <div class="row">
-                                                        <div class="col-md-12">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3 row">
+                                                                <label class="col-xl-3 col-sm-4 mb-0">
+                                                                    Kategori
+                                                                </label>
+                                                                <select class="form-control digits col-xl-8 col-sm-7" name="category">
+                                                                    <option value="1">Consumer & Convenient Goods, Food</option>
+                                                                    <option value="2">Agro Product</option>
+                                                                    <option value="3">Fashion Product</option>
+                                                                    <option value="4">Mesin-mesin UKM</option>
+                                                                    <option value="5">Kerjaninan Tangan</option>
+                                                                    <option value="6">Produk Rumah Tangga dan Dekorasi</option>
+                                                                </select>
+                                                            </div>
                                                             <div class="form-group mb-3 row">
                                                                 <label class="col-xl-3 col-sm-4 mb-0">
                                                                     Nama
                                                                 </label>
                                                                 <input class="form-control col-xl-8 col-sm-7" type="text" name="nama_produk" required="">
                                                             </div>
-                                                            <div class="form-group mb-3 row">
+                                                            <input class="form-control col-xl-8 col-sm-7" name="harga_produk" type="hidden" value="0">
+                                                            <!-- <div class="form-group mb-3 row">
                                                                 <label class="col-xl-3 col-sm-4 mb-0">
                                                                     Harga
                                                                 </label>
                                                                 <input class="form-control col-xl-8 col-sm-7" name="harga_produk" type="text" id="rupiah" min="0" required="">
-                                                            </div>
+                                                            </div> -->
                                                             <div class="form-group mb-3 row">
                                                                 <label class="col-xl-3 col-sm-4 mb-0">
                                                                     Kode KBLI
@@ -107,6 +121,14 @@ activityLog(urlTrack());
                                                                     Gambar Produk 3
                                                                 </label>
                                                                 <input class="form-control col-xl-8 col-sm-7" name="gambarProduk[]" type="file" accept="image/*">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group row">
+                                                                <label class="col-xl-3 col-sm-4">Deskripsi</label>
+                                                                <div class="col-xl-9 col-sm-8 pl-0 description-sm">
+                                                                    <textarea id="editor1" class="col-xl-10 col-sm-8" name="deskripsi_produk" cols="12" rows="4"></textarea>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

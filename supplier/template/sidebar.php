@@ -13,12 +13,12 @@
             <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Produk</span><i class="fa fa-angle-right pull-right"></i></a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="#"><i class="fa fa-circle"></i>
+                        <a href="../produk"><i class="fa fa-circle"></i>
                             <span>Daftar Produk</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../produk/tambah"><i class="fa fa-circle"></i>
+                        <a href="../produk/add"><i class="fa fa-circle"></i>
                             <span>Tambah Produk</span>
                         </a>
                     </li>
