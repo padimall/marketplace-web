@@ -81,9 +81,9 @@ $productCode = decodeURL($_GET['product']);
                                     <hr>
                                     <h6 class="product-title">Deskripsi</h6>
                                     <p><?= $data['description'] ?></p>
-                                    <div class="product-price digits mt-4">
+                                    <!-- <div class="product-price digits mt-4">
                                         <h3><?= rupiah($data['price']) ?></h3>
-                                    </div>
+                                    </div> -->
                                     <hr>
 
                                     <div class="m-t-15">
