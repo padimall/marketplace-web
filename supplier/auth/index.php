@@ -204,9 +204,9 @@ activityLog(urlTrack());
                                             <div class="form-group">
                                                 <input required="" name="nama_toko" type="text" class="form-control" placeholder="Nama Toko">
                                             </div>
-                                            <div class="form-group">
-                                                <input required="" name="nib" type="text" class="form-control" placeholder="NIB">
-                                            </div>
+                                            <!-- <div class="form-group">
+                                            </div> -->
+                                            <input required="" name="hidden" value="0" type="text" class="form-control" placeholder="NIB">
                                             <div class="form-group">
                                                 <input required="" name="alamat" type="text" class="form-control" placeholder="Alamat">
                                             </div>
@@ -214,7 +214,7 @@ activityLog(urlTrack());
                                                 <input required="" name="email" type="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" name="phone" type="number" class="form-control" placeholder="Phone Number">
+                                                <input required="" name="phone" type="text" class="form-control" placeholder="Phone Number">
                                             </div>
                                             <div class="form-group">
                                                 <input required="" name="slogan" type="text" class="form-control" placeholder="Slogan Toko">
