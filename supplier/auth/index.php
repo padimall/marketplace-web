@@ -205,8 +205,9 @@ activityLog(urlTrack());
                                                 <input required="" name="nama_toko" type="text" class="form-control" placeholder="Nama Toko">
                                             </div>
                                             <!-- <div class="form-group">
+
                                             </div> -->
-                                            <input required="" name="hidden" value="0" type="text" class="form-control" placeholder="NIB">
+                                            <input required="" name="nib" type="hidden" value="0" class="form-control" placeholder="NIB">
                                             <div class="form-group">
                                                 <input required="" name="alamat" type="text" class="form-control" placeholder="Alamat">
                                             </div>
