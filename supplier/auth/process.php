@@ -16,11 +16,8 @@ if (isset($_POST['btnRegister'])) {
     $slogan = htmlentities($_POST['slogan']);
 
     //check if password and confirm password match
-    if ($password != $confirm_password || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($username) || empty($nib) || empty($email) || empty($phone)) {
+    if ($password != $confirm_password || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($username) || empty($email) || empty($phone)) {
     } else {
-
-        //checkusername
-
         $sql = $pdo->prepare("
         INSERT INTO supplier 
         (username, password, nama_toko, nib, alamat, email, phone, slogan) 
@@ -35,9 +32,6 @@ if (isset($_POST['btnRegister'])) {
         $sql->bindParam(':phone', $phone);
         $sql->bindParam(':slogan', $slogan);
         if ($sql->execute()) {
-            // FlashMessage::add("<div class='text-center'>
-            //                         <div class='badge badge-success' role='alert'>Pendaftaran Berhasil</div>
-            //                     </div>");
             redirect("../auth");
         }
     }
@@ -60,10 +54,8 @@ if (isset($_POST['btnLogin'])) {
                 $_SESSION['email'] = encodeURL($data['email']);
                 $_SESSION['nama_toko'] = encodeURL($data['nama_toko']);
                 $_SESSION['supplier_status'] = encodeURL('login');
-                // activityLog("user:admin;login successfull", urlTrack());
                 redirect('../dashboard');
             } else {
-                // FlashMessage::add("<div class='badge badge-success text-center mx-auto' role='alert'>Succesful Updated</div>");
                 redirect("../auth");
             }
         }

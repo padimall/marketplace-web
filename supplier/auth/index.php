@@ -207,7 +207,8 @@ activityLog(urlTrack());
                                             <!-- <div class="form-group">
 
                                             </div> -->
-                                            <input required="" name="nib" type="hidden" value="0" class="form-control" placeholder="NIB">
+                                            <input required="" name="nib" type="hidden" value="1" class="form-control" placeholder="NIB">
+
                                             <div class="form-group">
                                                 <input required="" name="alamat" type="text" class="form-control" placeholder="Alamat">
                                             </div>
@@ -281,6 +282,7 @@ activityLog(urlTrack());
                 document.getElementById("btnRegister").disabled = true;
             } else {
                 $('#responsePassword').html('');
+                document.getElementById("btnRegister").disabled = false;
             }
         })
 
@@ -295,6 +297,7 @@ activityLog(urlTrack());
                     if (data == 0) {
                         $('#val').val("1");
                         $('#response').html('<p style="color: #339966;"><b>Your username is available.</b></p>');
+                        document.getElementById("btnRegister").disabled = false;
                     } else {
                         $('#val').val("0");
                         $('#response').html('<p style="color: #ff0000;"><b>Your username is not available.</b></p>');
