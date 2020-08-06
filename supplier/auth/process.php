@@ -18,6 +18,9 @@ if (isset($_POST['btnRegister'])) {
     //check if password and confirm password match
     if ($password != $confirm_password || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($username) || empty($nib) || empty($email) || empty($phone)) {
     } else {
+
+        //checkusername
+
         $sql = $pdo->prepare("
         INSERT INTO supplier 
         (username, password, nama_toko, nib, alamat, email, phone, slogan) 

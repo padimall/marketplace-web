@@ -191,13 +191,15 @@ activityLog(urlTrack());
                                     <div class="tab-pane fade" id="top-contact" role="tabpanel" aria-labelledby="contact-top-tab">
                                         <form class="form-horizontal auth-form" method="POST" action="process">
                                             <div class="form-group">
-                                                <input required="" name="username" type="text" class="form-control" placeholder="Username">
+                                                <input required="" name="username" id="username" type="text" class="form-control" placeholder="Username">
+                                                <div id="response" class="ml-1"></div>
                                             </div>
                                             <div class="form-group">
                                                 <input required="" name="password" type="password" class="form-control" placeholder="Password" id="password">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" name="confirm_password" type="password" class="form-control" placeholder="Confirm Password" id=confirm_password>
+                                                <input required="" name="confirm_password" id="confirm_password" type="password" class="form-control" placeholder="Confirm Password" id=confirm_password>
+                                                <div id="responsePassword" class="ml-1"></div>
                                             </div>
                                             <div class="form-group">
                                                 <input required="" name="nama_toko" type="text" class="form-control" placeholder="Nama Toko">
@@ -212,7 +214,7 @@ activityLog(urlTrack());
                                                 <input required="" name="email" type="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" name="phone" type="text" class="form-control" placeholder="Phone Number">
+                                                <input required="" name="phone" type="number" class="form-control" placeholder="Phone Number">
                                             </div>
                                             <div class="form-group">
                                                 <input required="" name="slogan" type="text" class="form-control" placeholder="Slogan Toko">
@@ -233,25 +235,6 @@ activityLog(urlTrack());
         </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
@@ -288,17 +271,37 @@ activityLog(urlTrack());
         });
     </script>
     <script type="text/javascript">
-        $(function() {
-            $("#btnRegister").click(function() {
-                var password = $("#password").val();
-                var confirmPassword = $("#confirm_password").val();
-                if (password != confirmPassword) {
-                    alert("Maaf, password yang kamu masukkan tidak sesuai");
-                    return false;
+        $(document).on('keyup', '#confirm_password', function() {
+            var password = $("#password").val();
+            var confirmPassword = $("#confirm_password").val();
+
+            if (password != confirmPassword) {
+                $('#responsePassword').html('<p style="color: #ff0000;"><b>Your password is not match.</b></p>');
+                document.getElementById("btnRegister").disabled = true;
+            } else {
+                $('#responsePassword').html('');
+            }
+        })
+
+        $(document).on('keyup', '#username', function() {
+            $('#val').val("0");
+            $.ajax({
+                url: "check-username.php",
+                method: "POST",
+                data: $(this).serialize(),
+                dataType: "json",
+                success: function(data) {
+                    if (data == 0) {
+                        $('#val').val("1");
+                        $('#response').html('<p style="color: #339966;"><b>Your username is available.</b></p>');
+                    } else {
+                        $('#val').val("0");
+                        $('#response').html('<p style="color: #ff0000;"><b>Your username is not available.</b></p>');
+                        document.getElementById("btnRegister").disabled = true;
+                    }
                 }
-                return true;
-            });
-        });
+            })
+        })
     </script>
 </body>
 
