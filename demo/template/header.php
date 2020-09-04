@@ -70,7 +70,7 @@
                                         <button class="navbar-toggler" type="button">
                                             <span class="navbar-icon"><i class="fa fa-arrow-down"></i></span>
                                         </button>
-                                        <h5 class="mb-0 text-white title-font">Kategori</h5>
+                                        <h5 class="mb-0 title-font">Kategori</h5>
                                     </nav>
                                     <div class="collapse  nav-desk" id="navbarToggleExternalContent">
                                         <ul class="nav-cat title-font">
@@ -86,7 +86,7 @@
                             </div>
                             <div class="logo-block">
                                 <a class="#">
-                                    <img src="../demo/assets/images/layout-3/logo/logo.png" class="img-fluid  " alt="logo">
+                                    <img src="../demo/assets/images/logo/logo.png" class="img-fluid  " alt="logo">
                                 </a>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                 <div class="input-box">
                                     <form class="big-deal-form">
                                         <div class="input-group ">
-                                            <input type="text" class="form-control" placeholder="Cari barang yang kamu mau disini">
+                                            <input type="text" class="form-control" placeholder="Cari barang yang kamu mau disini" style="background-color: #f1eded;">
                                             <div class="input-group-prepend">
                                                 <span class="search"><i class="fa fa-search"></i></span>
                                             </div>

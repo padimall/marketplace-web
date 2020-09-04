@@ -2055,6 +2055,11 @@ button {
     font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1920 - 320)))
 }
 
+.product-title-modified {
+    color: #ffa800;
+    font-size: calc(15px + (14 - 11) * ((100vw - 320px) / (1920 - 320)))
+}
+
 .product .product-box .product-detail .detail-title .detail-left .rating-star i:last-child {
     color: #e8ebf2
 }
@@ -3620,7 +3625,8 @@ button {
 }
 
 .layout-header3 {
-    background-color: #84b213
+    /* background-color: #84b213 */
+    background-color: white
 }
 
 .layout-header3 .main-menu {
@@ -3743,8 +3749,8 @@ button {
     width: 17px;
     height: 17px;
     padding: 0;
-    background-color: #fff;
-    color: #84b213;
+    background-color: #84b213;
+    color: #fff;
     border-radius: 50%;
     font-size: 12px;
     display: -webkit-box;
@@ -3863,15 +3869,16 @@ button {
 }
 
 .layout-header3 .main-menu .menu-right .input-block .input-box {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     /* width: 535px */
     width: 800px
 }
 
 .layout-header3 .main-menu .menu-right .input-block .input-box .big-deal-form {
     width: 100%;
-    background-color: #fff;
-    border: 1px solid #ddd
+    border: none;
+    border-radius: 25px;
+    color: #a9a9a9;
 }
 
 .layout-header3 .main-menu .menu-right .input-block .input-box .big-deal-form .input-group .form-control {
@@ -3935,7 +3942,7 @@ button {
 }
 
 .layout-header3 .main-menu .menu-right .icon-block ul li i {
-    color: #fff;
+    color: #000;
     font-size: 29px
 }
 
