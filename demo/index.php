@@ -25,7 +25,8 @@
                             <div>
                                 <div class="slider-banner slide-banner-2 p-center">
                                     <div class="slider-img">
-                                        <img src="https://wallpaperaccess.com/full/1306571.jpg" class="img-fluid" alt="slider">
+                                        <img src="https://wallpaperaccess.com/full/1306571.jpg" class="img-fluid"
+                                            alt="slider">
                                     </div>
                                     <div class="slider-banner-contain">
                                         <div class="sub-contain">
@@ -39,7 +40,8 @@
                             <div>
                                 <div class="slider-banner slide-banner-2 p-center">
                                     <div class="slider-img">
-                                        <img src="https://images.alphacoders.com/768/thumb-1920-76811.jpg" class="img-fluid" alt="slider">
+                                        <img src="https://images.alphacoders.com/768/thumb-1920-76811.jpg"
+                                            class="img-fluid" alt="slider">
                                     </div>
                                     <div class="slider-banner-contain">
                                         <div class="sub-contain">
@@ -68,7 +70,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/1.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/1.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -82,7 +85,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/2.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/2.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -96,7 +100,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/3.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/3.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -110,7 +115,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/4.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/4.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -124,7 +130,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/5.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/5.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -138,7 +145,8 @@
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/6.png" alt="category-img" class="img-fluid">
+                                        <img src="assets/images/layout-6/rounded-category/6.png" alt="category-img"
+                                            class="img-fluid">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
@@ -168,55 +176,57 @@
                 <div class="col pr-0">
                     <div class="product-slide-6 no-arrow">
                         <?php
-                        for ($i = 1; $i < 10; $i++) {
+                        for ($i = 1; $i < 8; $i++) {
                         ?>
-                            <div>
-                                <div class="product-box">
-                                    <div class="product-imgbox">
-                                        <div class="product-front">
-                                            <img src="assets/images/layout-3/product/1.jpg" class="img-fluid  " alt="product">
-                                        </div>
-                                        <div class="product-icon icon-center">
-                                            <!-- <div>
+                        <div>
+                            <div class="product-box">
+                                <div class="product-imgbox">
+                                    <div class="product-front">
+                                        <img src="assets/images/layout-3/product/1.jpg" class="img-fluid  "
+                                            alt="product">
+                                    </div>
+                                    <div class="product-icon icon-center">
+                                        <!-- <div>
                                                 <a href="javascript:void(0)" title="Tambah ke Wishlist">
                                                     <i class="ti-heart" aria-hidden="true"></i>
                                                 </a>
                                             </div> -->
-                                            <div>
-                                                <a href="#" data-toggle="modal" data-target="#quick-view" title="Quick View">
-                                                    <i class="ti-search" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
+                                        <div>
+                                            <a href="#" data-toggle="modal" data-target="#quick-view"
+                                                title="Quick View">
+                                                <i class="ti-search" aria-hidden="true"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="product-detail detail-inline detail-inverse">
-                                        <div class="detail-title">
-                                            <div class="detail-left">
-                                                <a href="">
-                                                    <h3 class="product-title-modified">
-                                                        Nama Produk <?= $i ?>
-                                                    </h3>
-                                                </a>
-                                                <a href="">
-                                                    <h6 class="price-title text-left">
-                                                        Nama Toko <?= $i ?>
-                                                    </h6>
-                                                </a>
+                                </div>
+                                <div class="product-detail detail-inline detail-inverse">
+                                    <div class="detail-title">
+                                        <div class="detail-left">
+                                            <a href="">
+                                                <h3 class="product-title-modified">
+                                                    Nama Produk <?= $i ?>
+                                                </h3>
+                                            </a>
+                                            <a href="">
+                                                <h6 class="price-title text-left">
+                                                    Nama Toko <?= $i ?>
+                                                </h6>
+                                            </a>
+                                        </div>
+                                        <div class="detail-right">
+                                            <div class="check-price">
+                                                Rp. 0.000.000
                                             </div>
-                                            <div class="detail-right">
-                                                <div class="check-price">
-                                                    Rp. 0.000.000
-                                                </div>
+                                            <div class="price">
                                                 <div class="price">
-                                                    <div class="price">
-                                                        Rp. 0.000.000
-                                                    </div>
+                                                    Rp. 0.000.000
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <?php
                         }
                         ?>
@@ -235,7 +245,8 @@
             <div class="row">
                 <div class="col">
                     <div class="contact-banner-contain">
-                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid" alt="call-banner"></div>
+                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid"
+                                alt="call-banner"></div>
                         <div>
                             <h3>Jika kamu memiliki pertanyaan, silahkan hubungi kami di</h3>
                         </div>
@@ -355,14 +366,17 @@
     <!-- Add to cart bar end-->
 
     <!-- Quick-view modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content quick-view-modal">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick" class="img-fluid "></div>
+                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick"
+                                    class="img-fluid "></div>
                         </div>
                         <div class="col-lg-6 rtl-text">
                             <div class="product-right">
@@ -370,7 +384,10 @@
                                 <h3>Rp. 0.000.000</h3>
                                 <div class="border-product">
                                     <h6 class="product-title">Deskripsi Produk</h6>
-                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis
+                                        iste natus error sit voluptatem accusantium doloremque laudantium</p>
                                 </div>
                                 <div class="border-product">
                                     <h6 class="product-title">Stok Produk</h6>
@@ -415,10 +432,16 @@
                 </div>
                 <div>
                     <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b</a> </h6> </div> </form> </div> </div> <!-- Add to account bar end-->
+                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    </h6>
+                </div>
+            </form>
+        </div>
+    </div> <!-- Add to account bar end-->
 
-                                <!-- script js-->
-                                <<?php include 'template/script.php' ?> <!-- script js-->
+    <!-- script js-->
+    <?php include 'template/script.php' ?>
+    <!-- script js-->
 
 </body>
 
