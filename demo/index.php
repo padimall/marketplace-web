@@ -186,11 +186,6 @@
                                             alt="product">
                                     </div>
                                     <div class="product-icon icon-center">
-                                        <!-- <div>
-                                                <a href="javascript:void(0)" title="Tambah ke Wishlist">
-                                                    <i class="ti-heart" aria-hidden="true"></i>
-                                                </a>
-                                            </div> -->
                                         <div>
                                             <a href="#" data-toggle="modal" data-target="#quick-view"
                                                 title="Quick View">
@@ -202,12 +197,12 @@
                                 <div class="product-detail detail-inline detail-inverse">
                                     <div class="detail-title">
                                         <div class="detail-left">
-                                            <a href="">
+                                            <a href="produk-detail">
                                                 <h3 class="product-title-modified">
                                                     Nama Produk <?= $i ?>
                                                 </h3>
                                             </a>
-                                            <a href="">
+                                            <a href="toko-detail">
                                                 <h6 class="price-title text-left">
                                                     Nama Toko <?= $i ?>
                                                 </h6>

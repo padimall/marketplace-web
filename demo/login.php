@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-8 offset-xl-4 offset-lg-3 offset-md-2">
                     <div class="theme-card">
-                        <h3 class="text-center">Login</h3>
+                        <h3 class="text-center">Masuk</h3>
                         <form class="theme-form">
                             <div class="form-group">
                                 <label for="email">Email</label>
@@ -29,11 +29,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="review">Password</label>
-                                <input type="password" class="form-control" id="review"
-                                    placeholder="Enter your password" required="">
+                                <input type="password" class="form-control" placeholder="Masukkan password" required="">
                             </div>
-                            <a href="#" class="btn btn-normal">Login</a>
-                            <a class="float-right txt-default mt-2" href="forget-pwd.html" id="fgpwd">Lupa Password</a>
+                            <a href="#" class="btn btn-normal">Masuk</a>
+                            <a class="float-right txt-default mt-2" href="lupa-password">Lupa Password</a>
                         </form>
                         <!-- <p class="mt-3">Sign up for a free account at our store. Registration is quick and easy. It
                             allows you to be able to order from our shop. To start shopping click register.</p> -->
@@ -51,7 +50,8 @@
             <div class="row">
                 <div class="col">
                     <div class="contact-banner-contain">
-                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid" alt="call-banner"></div>
+                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid"
+                                alt="call-banner"></div>
                         <div>
                             <h3>Jika kamu memiliki pertanyaan, silahkan hubungi kami di</h3>
                         </div>
@@ -171,14 +171,17 @@
     <!-- Add to cart bar end-->
 
     <!-- Quick-view modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content quick-view-modal">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick" class="img-fluid "></div>
+                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick"
+                                    class="img-fluid "></div>
                         </div>
                         <div class="col-lg-6 rtl-text">
                             <div class="product-right">
@@ -186,7 +189,10 @@
                                 <h3>Rp. 0.000.000</h3>
                                 <div class="border-product">
                                     <h6 class="product-title">Deskripsi Produk</h6>
-                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis
+                                        iste natus error sit voluptatem accusantium doloremque laudantium</p>
                                 </div>
                                 <div class="border-product">
                                     <h6 class="product-title">Stok Produk</h6>
@@ -231,14 +237,16 @@
                 </div>
                 <div>
                     <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b</a> </h6> 
-                </div> 
+                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    </h6>
+                </div>
             </form>
-        </div> 
+        </div>
     </div> <!-- Add to account bar end-->
-    
+
     <!-- script js-->
-    <?php include 'template/script.php' ?> <!-- script js-->
+    <?php include 'template/script.php' ?>
+    <!-- script js-->
 
 </body>
 

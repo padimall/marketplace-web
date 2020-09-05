@@ -9367,11 +9367,14 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 20px
+    margin-top: 20px;
+    padding: 20px 20px 0 20px
 }
 
 .single-product-tables table {
-    width: 20%
+    /* width: 20% */
+    /* padding: 20px 20px 0 20px */
+    width: 100%
 }
 
 .single-product-tables table tr {
@@ -9474,12 +9477,14 @@ button {
 
 .tab-product,
 .product-full-tab {
-    margin-top: 30px
+    /* margin-top: 30px */
+    margin-top: 0px
 }
 
 .tab-product.tab-exes,
 .product-full-tab.tab-exes {
-    margin-top: 50px
+    /* margin-top: 50px */
+    margin-top: 0px
 }
 
 .tab-product .nav-material.nav-tabs,

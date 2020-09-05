@@ -66,7 +66,8 @@
                             </div>
                             <div class="nav-block">
                                 <div class="nav-left">
-                                    <nav class="navbar" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+                                    <nav class="navbar" data-toggle="collapse"
+                                        data-target="#navbarToggleExternalContent">
                                         <button class="navbar-toggler" type="button">
                                             <span class="navbar-icon"><i class="fa fa-arrow-down"></i></span>
                                         </button>
@@ -74,18 +75,24 @@
                                     </nav>
                                     <div class="collapse  nav-desk" id="navbarToggleExternalContent">
                                         <ul class="nav-cat title-font">
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 1</a></li>
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 2</a></li>
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 3</a></li>
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 4</a></li>
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 5</a></li>
-                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png" alt="category-product"> <a href="#">Kategori 6</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 1</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 2</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 3</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 4</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 5</a></li>
+                                            <li> <img src="../demo/assets/images/layout-1/nav-img/01.png"
+                                                    alt="category-product"> <a href="#">Kategori 6</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="logo-block">
-                                <a class="#">
+                                <a href="../demo">
                                     <img src="../demo/assets/images/logo/logo.png" class="img-fluid  " alt="logo">
                                 </a>
                             </div>
@@ -95,7 +102,9 @@
                                 <div class="input-box">
                                     <form class="big-deal-form">
                                         <div class="input-group ">
-                                            <input type="text" class="form-control" placeholder="Cari barang yang kamu mau disini" style="background-color: #f1eded;">
+                                            <input type="text" class="form-control"
+                                                placeholder="Cari barang yang kamu mau disini"
+                                                style="background-color: #f1eded;">
                                             <div class="input-group-prepend">
                                                 <span class="search"><i class="fa fa-search"></i></span>
                                             </div>
@@ -117,8 +126,12 @@
                                                         <div class="row">
                                                             <div class="col-xl-12">
                                                                 <form>
-                                                                    <div class="form-group"><input type="text" class="form-control" id="exampleInputPassword1" placeholder="Search a Product"></div>
-                                                                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                                                    <div class="form-group"><input type="text"
+                                                                            class="form-control"
+                                                                            id="exampleInputPassword1"
+                                                                            placeholder="Search a Product"></div>
+                                                                    <button type="submit" class="btn btn-primary"><i
+                                                                            class="fa fa-search"></i></button>
                                                                 </form>
                                                             </div>
                                                         </div>
@@ -130,7 +143,8 @@
                                     <li class="mobile-setting mobile-setting-hover" onclick="openSetting()">
                                         <a href="#"><i class="icon-settings"></i></a>
                                     </li>
-                                    <li class="mobile-cart cart-hover-div" onclick="openCart()"><a href="#"><span class="cart-item">0</span><i class="icon-shopping-cart"></i></a>
+                                    <li class="mobile-cart cart-hover-div" onclick="openCart()"><a href="#"><span
+                                                class="cart-item">0</span><i class="icon-shopping-cart"></i></a>
                                     </li>
                                 </ul>
                             </div>
