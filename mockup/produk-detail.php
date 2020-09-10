@@ -23,40 +23,32 @@
                     <div class="col-lg-5">
                         <div class="product-slick no-arrow">
                             <div>
-                                <img src="assets/images/product-sidebar/001.jpg" alt=""
-                                    class="img-fluid  image_zoom_cls-0">
+                                <img src="assets/images/product-sidebar/001.jpg" alt="" class="img-fluid  image_zoom_cls-0">
                             </div>
                             <div>
-                                <img src="assets/images/product-sidebar/002.jpg" alt=""
-                                    class="img-fluid  image_zoom_cls-1">
+                                <img src="assets/images/product-sidebar/002.jpg" alt="" class="img-fluid  image_zoom_cls-1">
                             </div>
                             <div>
-                                <img src="assets/images/product-sidebar/003.jpg" alt=""
-                                    class="img-fluid  image_zoom_cls-2">
+                                <img src="assets/images/product-sidebar/003.jpg" alt="" class="img-fluid  image_zoom_cls-2">
                             </div>
                             <div>
-                                <img src="assets/images/product-sidebar/004.jpg" alt=""
-                                    class="img-fluid  image_zoom_cls-3">
+                                <img src="assets/images/product-sidebar/004.jpg" alt="" class="img-fluid  image_zoom_cls-3">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
                                 <div class="slider-nav">
                                     <div>
-                                        <img src="assets/images/product-sidebar/001.jpg" alt=""
-                                            class="img-fluid image_zoom_cls-0">
+                                        <img src="assets/images/product-sidebar/001.jpg" alt="" class="img-fluid image_zoom_cls-0">
                                     </div>
                                     <div>
-                                        <img src="assets/images/product-sidebar/002.jpg" alt=""
-                                            class="img-fluid image_zoom_cls-1">
+                                        <img src="assets/images/product-sidebar/002.jpg" alt="" class="img-fluid image_zoom_cls-1">
                                     </div>
                                     <div>
-                                        <img src="assets/images/product-sidebar/003.jpg" alt=""
-                                            class="img-fluid image_zoom_cls-2">
+                                        <img src="assets/images/product-sidebar/003.jpg" alt="" class="img-fluid image_zoom_cls-2">
                                     </div>
                                     <div>
-                                        <img src="assets/images/product-sidebar/004.jpg" alt=""
-                                            class="img-fluid image_zoom_cls-3">
+                                        <img src="assets/images/product-sidebar/004.jpg" alt="" class="img-fluid image_zoom_cls-3">
                                     </div>
                                 </div>
                             </div>
@@ -68,14 +60,12 @@
                             <h4><del>Rp. 0.000.000</del><span>55% off</span></h4>
                             <h3>Rp. 0.000.000</h3>
                             <div class="product-description border-product">
-                                <div class="modal fade" id="sizemodal" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="sizemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">Sheer Straight Kurta</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -89,14 +79,12 @@
                                 <div class="qty-box">
                                     <div class="input-group">
                                         <span class="input-group-prepend">
-                                            <button type="button" class="btn quantity-left-minus" data-type="minus"
-                                                data-field=""><i class="ti-angle-left"></i>
+                                            <button type="button" class="btn quantity-left-minus" data-type="minus" data-field=""><i class="ti-angle-left"></i>
                                             </button>
                                         </span>
                                         <input type="text" name="quantity" class="form-control input-number" value="1">
                                         <span class="input-group-prepend">
-                                            <button type="button" class="btn quantity-right-plus" data-type="plus"
-                                                data-field="">
+                                            <button type="button" class="btn quantity-right-plus" data-type="plus" data-field="">
                                                 <i class="ti-angle-right"></i>
                                             </button>
                                         </span>
@@ -116,20 +104,15 @@
                                             <div class="col-sm-12 col-lg-12 ">
                                                 <div class=" creative-card creative-inner">
                                                     <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
-                                                        <li class="nav-item"><a class="nav-link active"
-                                                                id="top-home-tab" data-toggle="tab" href="#top-home"
-                                                                role="tab" aria-selected="true">Description</a>
+                                                        <li class="nav-item"><a class="nav-link active" id="top-home-tab" data-toggle="tab" href="#top-home" role="tab" aria-selected="true">Description</a>
                                                             <div class="material-border"></div>
                                                         </li>
-                                                        <li class="nav-item"><a class="nav-link" id="profile-top-tab"
-                                                                data-toggle="tab" href="#top-profile" role="tab"
-                                                                aria-selected="false">Details</a>
+                                                        <li class="nav-item"><a class="nav-link" id="profile-top-tab" data-toggle="tab" href="#top-profile" role="tab" aria-selected="false">Details</a>
                                                             <div class="material-border"></div>
                                                         </li>
                                                     </ul>
                                                     <div class="tab-content nav-material" id="top-tabContent">
-                                                        <div class="tab-pane fade show active" id="top-home"
-                                                            role="tabpanel" aria-labelledby="top-home-tab">
+                                                        <div class="tab-pane fade show active" id="top-home" role="tabpanel" aria-labelledby="top-home-tab">
                                                             <p>Lorem Ipsum is simply dummy text of the printing and
                                                                 typesetting industry. Lorem
                                                                 Ipsum has been the industry's standard dummy text ever
@@ -146,8 +129,7 @@
                                                                 the release of Letraset sheets containing Lorem Ipsum
                                                                 passages, and more recently</p>
                                                         </div>
-                                                        <div class="tab-pane fade" id="top-profile" role="tabpanel"
-                                                            aria-labelledby="profile-top-tab">
+                                                        <div class="tab-pane fade" id="top-profile" role="tabpanel" aria-labelledby="profile-top-tab">
                                                             <p>Lorem Ipsum is simply dummy text of the printing and
                                                                 typesetting industry. Lorem
                                                                 Ipsum has been the industry's standard dummy text ever
@@ -306,8 +288,8 @@
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="cart.html" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
-                            <a href="#" class="btn btn-normal btn-xs checkout">Checkout</a>
+                            <a href="keranjang" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
+                            <a href="checkout" class="btn btn-normal btn-xs checkout">Checkout</a>
                         </div>
                     </li>
                 </ul>
@@ -317,17 +299,14 @@
     <!-- Add to cart bar end-->
 
     <!-- Quick-view modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
-        aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content quick-view-modal">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick"
-                                    class="img-fluid "></div>
+                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick" class="img-fluid "></div>
                         </div>
                         <div class="col-lg-6 rtl-text">
                             <div class="product-right">
@@ -382,8 +361,12 @@
                     <a href="#" class="btn btn-rounded btn-block ">Masuk</a>
                 </div>
                 <div>
-                    <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    <h5 class="forget-class">
+                        <a href="#" class="d-block">Lupa Password</a>
+                    </h5>
+                    <h6 class="forget-class">
+                        <a href="register" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b>
+                        </a>
                     </h6>
                 </div>
             </form>

@@ -433,6 +433,21 @@ button {
     letter-spacing: 0.05em
 }
 
+.btn-normal-green {
+    font-size: 14px;
+    padding: 18px 45px;
+    font-weight: 700;
+    color: #fff !important;
+    background-color: #84B214;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 0;
+    letter-spacing: 0.05em
+}
+
 .btn-normal.btn-outline {
     background-color: #fff;
     border: 2px solid #f97c2d;
@@ -9995,6 +10010,11 @@ button {
 
 .order-box .sub-total .shipping {
     width: 35%;
+    float: right
+}
+
+.order-box .sub-total .shipping-2 {
+    /* width: 35%; */
     float: right
 }
 

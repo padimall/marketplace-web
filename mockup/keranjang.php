@@ -16,79 +16,85 @@
     <!-- header end -->
 
     <!--section start-->
-    <section class="login-page section-big-py-space bg-light">
+    <section class="cart-section section-big-py-space bg-light">
         <div class="custom-container">
             <div class="row">
-                <div class="col-lg-4 offset-lg-4">
-                    <div class="theme-card">
-                        <h3 class="text-center">Daftar</h3>
-                        <form class="theme-form">
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <label>Nama</label>
-                                    <input type="text" class="form-control" placeholder="Nama Lengkap" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label>Alamat</label>
-                                    <input type="text" class="form-control" placeholder="Alamat Lengkap" required="">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Email" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label for="review">No HP</label>
-                                    <input type="number" class="form-control" placeholder="No Handphone" required="">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label>Konfirmasi Password</label>
-                                    <input type="text" class="form-control" placeholder="Konfirmasi Password" required="">
-                                </div>
-                                <div class="col-md-12 form-group"><a href="#" class="btn btn-normal">Buat Akun</a></div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-12 ">
-                                    <p >Sudah punya akun?
-                                        <a href="login" class="txt-default"></a> Klik disini untuk
-                                        <a href="login" class="txt-default">Masuk</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-sm-12">
+                    <table class="table cart-table table-responsive-xs">
+                        <thead>
+                            <tr class="table-head">
+                                <th scope="col">Gambar</th>
+                                <th scope="col">Nama Produk</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Kuantitas</th>
+                                <th scope="col">Aksi</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="assets/images/layout-3/product/1.jpg" alt="cart" class=" ">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">Nama Produk 1</a>
+                                    <div class="mobile-cart-content row">
+                                        <div class="col-xs-3">
+                                            <div class="qty-box">
+                                                <div class="input-group">
+                                                    <input type="text" name="quantity" class="form-control input-number" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <h2 class="td-color">Rp. 200.000</h2>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <h2 class="td-color"><a href="#" class="icon"><i class="ti-close"></i></a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2>Rp. 200.000</h2>
+                                </td>
+                                <td>
+                                    <div class="qty-box">
+                                        <div class="input-group">
+                                            <input type="number" name="quantity" class="form-control input-number" value="1">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><a href="#" class="icon"><i class="ti-close"></i></a></td>
+                                <td>
+                                    <h2 class="td-color">Rp. 200.000</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table cart-table table-responsive-md">
+                        <tfoot>
+                            <tr>
+                                <td>Total Harga :</td>
+                                <td>
+                                    <h2>Rp. 200.000</h2>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row cart-buttons">
+                <div class="col-12">
+                    <a href="../demo" class="btn btn-normal">Lanjut Belanja</a>
+                    <a href="checkout" class="btn btn-normal-green ml-3">Beli</a>
                 </div>
             </div>
         </div>
     </section>
-    <!--Section ends-->
-
-    <!--contact banner start-->
-    <section class="contact-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="contact-banner-contain">
-                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid" alt="call-banner"></div>
-                        <div>
-                            <h3>Jika kamu memiliki pertanyaan, silahkan hubungi kami di</h3>
-                        </div>
-                        <div>
-                            <h2>123-456-7890</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--contact banner end-->
+    <!--section end-->
 
 
     <!--footer start-->
@@ -185,8 +191,8 @@
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="cart.html" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
-                            <a href="#" class="btn btn-normal btn-xs checkout">Checkout</a>
+                            <a href="keranjang" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
+                            <a href="checkout" class="btn btn-normal btn-xs checkout">Checkout</a>
                         </div>
                     </li>
                 </ul>
@@ -211,7 +217,10 @@
                                 <h3>Rp. 0.000.000</h3>
                                 <div class="border-product">
                                     <h6 class="product-title">Deskripsi Produk</h6>
-                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium. Sed ut perspiciatis, unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium. Sed ut perspiciatis, unde omnis
+                                        iste natus error sit voluptatem accusantium doloremque laudantium</p>
                                 </div>
                                 <div class="border-product">
                                     <h6 class="product-title">Stok Produk</h6>
@@ -255,15 +264,21 @@
                     <a href="#" class="btn btn-rounded btn-block ">Masuk</a>
                 </div>
                 <div>
-                    <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b</a> </h6> 
-                </div> 
+                    <h5 class="forget-class">
+                        <a href="#" class="d-block">Lupa Password</a>
+                    </h5>
+                    <h6 class="forget-class">
+                        <a href="register" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b>
+                        </a>
+                    </h6>
+                </div>
             </form>
-        </div> 
+        </div>
     </div> <!-- Add to account bar end-->
-    
+
     <!-- script js-->
-    <?php include 'template/script.php' ?> <!-- script js-->
+    <?php include 'template/script.php' ?>
+    <!-- script js-->
 
 </body>
 

@@ -15,55 +15,78 @@
     <?php include 'template/header.php' ?>
     <!-- header end -->
 
-    <!--section start-->
-    <section class="login-page section-big-py-space bg-light">
+    <!-- section start -->
+    <section class="section-big-py-space bg-light">
         <div class="custom-container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-8 offset-xl-4 offset-lg-3 offset-md-2">
-                    <div class="theme-card">
-                        <h3 class="text-center">Masuk</h3>
-                        <form class="theme-form">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email" placeholder="Email" required="">
+            <div class="checkout-page contact-page">
+                <div class="checkout-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <div class="checkout-title m-0 p-0">
+                                    <h3>Checkout</h3>
+                                </div>
+                                <div class="checkout-details theme-form  section-big-mt-space">
+                                    <div class="order-box">
+                                        <div class="title-box">
+                                            <div>Produk <span>Total</span></div>
+                                        </div>
+                                        <ul class="qty">
+                                            <li>Nama Produk 1 <span>Rp. 500.000</span></li>
+                                            <li>Nama Produk 2<span>Rp. 500.000</span></li>
+                                        </ul>
+                                        <ul class="sub-total">
+                                            <li>Subtotal <span class="count">Rp. 1.000.000</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="review">Password</label>
-                                <input type="password" class="form-control" placeholder="Masukkan password" required="">
-                            </div>
-                            <a href="#" class="btn btn-normal">Masuk</a>
-                            <a class="float-right txt-default mt-2" href="lupa-password">Lupa Password</a>
-                        </form>
-                        <!-- <p class="mt-3">Sign up for a free account at our store. Registration is quick and easy. It
-                            allows you to be able to order from our shop. To start shopping click register.</p> -->
-                        <a href="register" class="txt-default pt-3 d-block">Daftar Sekarang</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Section ends-->
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <div class="checkout-details theme-form  section-big-mt-space">
+                                    <div class="order-box">
+                                        <div class="title-box">
+                                            <div>Alamat Pengiriman </div>
+                                        </div>
+                                        <ul class="qty">
+                                            <li>Jl. Kemana Saja, Gang Sempurna No. 10</li>
+                                            <li>Budi Yanto (628123456789)</li>
+                                        </ul>
+                                        <ul class="sub-total">
+                                            <li>Pengiriman
+                                                <div class="shipping-2">
+                                                    <div class="product-page-per-view">
+                                                        <select>
+                                                            <option value="High to low">Padi Logistik (5-6 hari)
+                                                            </option>
+                                                            <option value="Low to High">Lion Parcel (5-6 hari)</option>
+                                                            <option value="Low to High">JNE (5-6 hari)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
 
-    <!--contact banner start-->
-    <section class="contact-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="contact-banner-contain">
-                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid"
-                                alt="call-banner"></div>
-                        <div>
-                            <h3>Jika kamu memiliki pertanyaan, silahkan hubungi kami di</h3>
+                                        </ul>
+                                        <ul class="qty">
+                                            <li>Total Ongkos Kirim<span>Rp. 100.000</span></li>
+                                        </ul>
+                                        <ul class="total">
+                                            <li>Total <span class="count">Rp. 1.100.000</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="payment-box">
+                                        <div class="text-right"><a href="#" class="btn btn-rounded mr-3">Pilih
+                                                Pembayaran</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>123-456-7890</h2>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!--contact banner end-->
+    <!-- section end -->
 
 
     <!--footer start-->
@@ -160,8 +183,8 @@
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="cart.html" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
-                            <a href="#" class="btn btn-normal btn-xs checkout">Checkout</a>
+                            <a href="keranjang" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
+                            <a href="checkout" class="btn btn-normal btn-xs checkout">Checkout</a>
                         </div>
                     </li>
                 </ul>
@@ -236,8 +259,12 @@
                     <a href="#" class="btn btn-rounded btn-block ">Masuk</a>
                 </div>
                 <div>
-                    <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    <h5 class="forget-class">
+                        <a href="#" class="d-block">Lupa Password</a>
+                    </h5>
+                    <h6 class="forget-class">
+                        <a href="register" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b>
+                        </a>
                     </h6>
                 </div>
             </form>

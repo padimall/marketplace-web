@@ -16,20 +16,51 @@
     <!-- header end -->
 
     <!--section start-->
-    <section class="login-page pwd-page section-big-py-space bg-light">
-        <div class="container">
+    <section class="login-page section-big-py-space bg-light">
+        <div class="custom-container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+                <div class="col-lg-4 offset-lg-4">
                     <div class="theme-card">
-                        <h3>Forget Your Password</h3>
+                        <h3 class="text-center">Daftar</h3>
                         <form class="theme-form">
                             <div class="form-row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="email"
-                                            placeholder="Enter Your Email" required="">
-                                    </div>
-                                </div><a href="#" class="btn btn-normal">Submit</a>
+                                <div class="col-md-12 form-group">
+                                    <label>Nama</label>
+                                    <input type="text" class="form-control" placeholder="Nama Lengkap" required="">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>Alamat</label>
+                                    <input type="text" class="form-control" placeholder="Alamat Lengkap" required="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Email" required="">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="review">No HP</label>
+                                    <input type="number" class="form-control" placeholder="No Handphone" required="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" required="">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>Konfirmasi Password</label>
+                                    <input type="text" class="form-control" placeholder="Konfirmasi Password" required="">
+                                </div>
+                                <div class="col-md-12 form-group"><a href="#" class="btn btn-normal">Buat Akun</a></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 ">
+                                    <p>Sudah punya akun?
+                                        <a href="login" class="txt-default"></a> Klik disini untuk
+                                        <a href="login" class="txt-default">Masuk</a>
+                                    </p>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -45,8 +76,7 @@
             <div class="row">
                 <div class="col">
                     <div class="contact-banner-contain">
-                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid"
-                                alt="call-banner"></div>
+                        <div class="contact-banner-img"><img src="assets/images/layout-1/call-img.png" class="img-fluid" alt="call-banner"></div>
                         <div>
                             <h3>Jika kamu memiliki pertanyaan, silahkan hubungi kami di</h3>
                         </div>
@@ -155,8 +185,8 @@
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="cart.html" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
-                            <a href="#" class="btn btn-normal btn-xs checkout">Checkout</a>
+                            <a href="keranjang" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
+                            <a href="checkout" class="btn btn-normal btn-xs checkout">Checkout</a>
                         </div>
                     </li>
                 </ul>
@@ -166,17 +196,14 @@
     <!-- Add to cart bar end-->
 
     <!-- Quick-view modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
-        aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content quick-view-modal">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick"
-                                    class="img-fluid "></div>
+                            <div class="quick-view-img"><img src="assets/images/layout-6/product/a6.jpg" alt="quick" class="img-fluid "></div>
                         </div>
                         <div class="col-lg-6 rtl-text">
                             <div class="product-right">
@@ -231,8 +258,12 @@
                     <a href="#" class="btn btn-rounded btn-block ">Masuk</a>
                 </div>
                 <div>
-                    <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    <h5 class="forget-class">
+                        <a href="#" class="d-block">Lupa Password</a>
+                    </h5>
+                    <h6 class="forget-class">
+                        <a href="register" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b>
+                        </a>
                     </h6>
                 </div>
             </form>

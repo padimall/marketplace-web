@@ -165,7 +165,7 @@
 
     <!--title start-->
     <div class="title4 section-my-space">
-        <h4>Produk <span>Unggulan</span></h4>
+        <h4>Mari <span>Belanja</span></h4>
     </div>
     <!--title end-->
 
@@ -350,8 +350,8 @@
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="cart.html" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
-                            <a href="#" class="btn btn-normal btn-xs checkout">Checkout</a>
+                            <a href="keranjang" class="btn btn-normal btn-xs view-cart">Lihat Keranjang</a>
+                            <a href="checkout" class="btn btn-normal btn-xs checkout">Checkout</a>
                         </div>
                     </li>
                 </ul>
@@ -426,8 +426,12 @@
                     <a href="#" class="btn btn-rounded btn-block ">Masuk</a>
                 </div>
                 <div>
-                    <h5 class="forget-class"><a href="#" class="d-block">Lupa Password</a></h5>
-                    <h6 class="forget-class"><a href="#" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b< /a>
+                    <h5 class="forget-class">
+                        <a href="#" class="d-block">Lupa Password</a>
+                    </h5>
+                    <h6 class="forget-class">
+                        <a href="register" class="d-block">Belum punya akun ? <b>Daftar Sekarang</b>
+                        </a>
                     </h6>
                 </div>
             </form>
