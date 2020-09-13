@@ -16,8 +16,8 @@ class Product
         $request = $api_request->request_post($api_endpoint, $params);
 
         return array(
-            "status" => $request['status'], //memberitahukan status dalam bentuk http code agar bisa di cek di tampilan
-            "result" => $request['result']
+            "status" => $request['status'], //memberitahukan status true/false
+            "result" => json_decode($request['result'], TRUE)
         );
     }
 
@@ -29,8 +29,8 @@ class Product
         $request = $api_request->request_post($api_endpoint, $params);
 
         return array(
-            "status" => $request['status'], //memberitahukan status dalam bentuk http code agar bisa di cek di tampilan
-            "result" => $request['result']
+            "status" => $request['status'], //memberitahukan status true/false
+            "result" => json_decode($request['result'], TRUE)
         );
     }
 }

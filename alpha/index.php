@@ -3,15 +3,12 @@ include('controller/product.php');
 $productView = new Product();
 
 $dataProduct = $productView->view_product();
-$dataProduct = $dataProduct["result"];
-// var_dump($dataProduct);
+$dataProduct = $dataProduct["result"]['data'];
+// var_dump($dataProduct["result"]['data']);
 
 $dataProduct_categories = $productView->view_product_categories();
-$dataProduct_categories = $dataProduct_categories["result"];
-
+$dataProduct_categories = $dataProduct_categories["result"]['data'];
 // var_dump($dataProduct_categories);
-
-// var_dump($dataProduct);
 ?>
 
 <!DOCTYPE html>
@@ -89,12 +86,13 @@ $dataProduct_categories = $dataProduct_categories["result"];
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="http://api.padimall.id/product-category/<?= $listProduct['image'] ?>"
-                                            class="img-fluid" alt="product">
+                                        <img src="http://api.padimall.id/<?= $listProduct['image'] ?>" class="img-fluid"
+                                            alt="product">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
                                             <?= $listProduct['name'] ?>
+
                                         </div>
                                     </div>
                                 </a>
@@ -122,12 +120,18 @@ $dataProduct_categories = $dataProduct_categories["result"];
                     <div class="product-slide-6 no-arrow">
                         <?php
                         foreach ($dataProduct as $row) {
+                            //cek apakah image ada atau tidak
+                            if ($row['image'] == NULL) {
+                                $imagePoduct = "product/image.jpg";
+                            } else {
+                                $imagePoduct = $row['image'][0];
+                            }
                         ?>
                         <div>
                             <div class="product-box">
                                 <div class="product-imgbox">
                                     <div class="product-front">
-                                        <img src="http://api.padimall.id/<?= $row['image'][0] ?>" class="img-fluid  "
+                                        <img src="http://api.padimall.id/<?= $imagePoduct ?>" class="img-fluid  "
                                             alt="product">
                                     </div>
                                     <div class="product-icon icon-center">
