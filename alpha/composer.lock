@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f5a3a4fa9ea352a4fe5bc150a11d917",
+    "content-hash": "d3ef3c545ea85a5cc4a9b7608b5bf5c6",
     "packages": [
         {
             "name": "rmccue/requests",
