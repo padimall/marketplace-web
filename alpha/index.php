@@ -8,9 +8,8 @@ $dataProduct = $dataProduct["result"]['data'];
 
 $dataProduct_categories = $productView->view_product_categories();
 $dataProduct_categories = $dataProduct_categories["result"]['data'];
-var_dump($dataProduct_categories);
+// var_dump($dataProduct_categories);
 ?>
-asd
 <!DOCTYPE html>
 <html lang="en">
 

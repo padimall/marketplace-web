@@ -7,7 +7,7 @@ class Api_request
     public function __construct()
     {
         //get class Api_config to get api details
-        include('./config/Api_config.php');
+        include('./config/api_config.php');
 
         $key = new Api_config;
         $api_key = $key->getKey();
