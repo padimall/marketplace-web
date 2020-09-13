@@ -1,6 +1,7 @@
 <?php
 include 'process.php';
 activityLog(urlTrack());
+$statusAction = FlashMessage::render();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -154,6 +155,7 @@ activityLog(urlTrack());
                     <div class="col-md-7 p-0 card-right">
                         <div class="card tab2-card">
                             <div class="card-body">
+                                <h2><?php echo $statusAction ?></h2>
                                 <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="top-profile-tab" data-toggle="tab" href="#top-profile" role="tab" aria-controls="top-profile" aria-selected="true"><span class="icon-user mr-2"></span>Login</a>

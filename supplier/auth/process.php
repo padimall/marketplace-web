@@ -6,8 +6,10 @@ include '../function.php';
 if (isset($_POST['btnRegister'])) {
     //secure XSS
     $username = htmlentities($_POST['username']);
-    $password = hashSHA384(htmlentities($_POST['password']));
-    $confirm_password = hashSHA384(htmlentities($_POST['confirm_password']));
+    // $password = hashSHA384(htmlentities($_POST['password']));
+    // $confirm_password = hashSHA384(htmlentities($_POST['confirm_password']));
+    $password = hashSHA384(preg_replace('/\s+/', '', strtolower(htmlentities($_POST['password']))));
+    $confirm_password = hashSHA384(preg_replace('/\s+/', '', strtolower(htmlentities($_POST['confirm_password']))));
     $nama_toko = htmlentities($_POST['nama_toko']);
     $nib = htmlentities($_POST['nib']);
     $alamat = htmlentities($_POST['alamat']);
@@ -32,6 +34,7 @@ if (isset($_POST['btnRegister'])) {
         $sql->bindParam(':phone', $phone);
         $sql->bindParam(':slogan', $slogan);
         if ($sql->execute()) {
+            FlashMessage::add("<div class='alert alert-warning fade show' role='alert'>Please check your input </div>");
             redirect("../auth");
         }
     }
@@ -40,7 +43,8 @@ if (isset($_POST['btnRegister'])) {
 //login process
 if (isset($_POST['btnLogin'])) {
     $username = htmlentities($_POST['username']);
-    $password = hashSHA384(htmlentities($_POST['password']));
+    // $password = hashSHA384(htmlentities($_POST['password']));
+    $password = hashSHA384(preg_replace('/\s+/', '', strtolower(htmlentities($_POST['password']))));
     if (empty($username) || empty($password)) {
     } else {
         $sql = $pdo->prepare("SELECT * FROM supplier WHERE BINARY username=:username AND BINARY password=:password");
