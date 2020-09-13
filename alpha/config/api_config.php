@@ -9,18 +9,11 @@ class Api_config
         $data = $sql->fetch();
         $bearerKey = $data['bearer_key'];
 
-
         //untuk versioning versi api, dilakukan di sini
-        // return array(
-        //     $bearerKey,
-        //     "v1",
-        //     "https://api.padimall.id/api/"
-        // );
-
         return array(
-            "bearer_key" => $bearerKey,
-            "version" => "v1",
-            "api_address" => "https://api.padimall.id/api/"
+            "bearer_key" => $bearerKey, //mendapatkan bearer key dev
+            "version" => "v1", //version api yang sedang digunakan
+            "api_address" => "https://api.padimall.id/api/" //endpoint api yang digunakan
         );
     }
 }

@@ -4,41 +4,33 @@ class Product
 {
     public function __construct()
     {
+        $api_request = new Api_request();
+        $this->api_request = $api_request;
     }
 
     public function view_product()
     {
-        $api_endpoint = "/product?request_type=1";
-        $api_request = new Api_request();
-        $request = $api_request->request_post($api_endpoint);
+        $api_endpoint = "/product";
+        $params = "request_type=1";
+        $api_request = $this->api_request;
+        $request = $api_request->request_post($api_endpoint, $params);
 
-        $httpCode = $request['status'];
-        $result = $request['result'];
-        // // kondisi jika response 422
-        if ($httpCode == 422) {
-            return array("0", null);
-        } else if ($httpCode == 200) {
-            return array("1", $result);
-        } else {
-            return array("1", $result);
-        }
+        return array(
+            "status" => $request['status'], //memberitahukan status dalam bentuk http code agar bisa di cek di tampilan
+            "result" => $request['result']
+        );
     }
 
     public function view_product_categories()
     {
-        $api_endpoint = "/product-category?request_type=1";
-        $api_request = new Api_request();
-        $request = $api_request->request_post($api_endpoint);
+        $api_endpoint = "/product-category";
+        $params = "request_type=1";
+        $api_request = $this->api_request;
+        $request = $api_request->request_post($api_endpoint, $params);
 
-        $httpCode = $request['status'];
-        $result = $request['result'];
-        // // kondisi jika response 422
-        if ($httpCode == 422) {
-            return array("0", null);
-        } else if ($httpCode == 200) {
-            return array("1", $result);
-        } else {
-            return array("1", $result);
-        }
+        return array(
+            "status" => $request['status'], //memberitahukan status dalam bentuk http code agar bisa di cek di tampilan
+            "result" => $request['result']
+        );
     }
 }

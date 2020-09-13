@@ -3,12 +3,15 @@ include('controller/product.php');
 $productView = new Product();
 
 $dataProduct = $productView->view_product();
-$dataProduct = $dataProduct[1];
+$dataProduct = $dataProduct["result"];
+// var_dump($dataProduct);
 
-//show product categories
 $dataProduct_categories = $productView->view_product_categories();
-$dataProduct_categories = $dataProduct_categories[1];
+$dataProduct_categories = $dataProduct_categories["result"];
 
+// var_dump($dataProduct_categories);
+
+// var_dump($dataProduct);
 ?>
 
 <!DOCTYPE html>
@@ -79,96 +82,25 @@ $dataProduct_categories = $dataProduct_categories[1];
             <div class="row">
                 <div class="col">
                     <div class="slide-6 no-arrow ">
+                        <?php
+                        foreach ($dataProduct_categories as $listProduct) {
+                        ?>
                         <div>
                             <div class="category-contain">
                                 <a href="#">
                                     <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/1.png" alt="category-img"
-                                            class="img-fluid">
+                                        <img src="http://api.padimall.id/product-category/<?= $listProduct['image'] ?>"
+                                            class="img-fluid" alt="product">
                                     </div>
                                     <div>
                                         <div class="btn-rounded">
-                                            Kategori 1
+                                            <?= $listProduct['name'] ?>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <div class="category-contain">
-                                <a href="#">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/2.png" alt="category-img"
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="btn-rounded">
-                                            Kategori 2
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="category-contain">
-                                <a href="#">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/3.png" alt="category-img"
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="btn-rounded">
-                                            Kategori 3
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="category-contain">
-                                <a href="#">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/4.png" alt="category-img"
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="btn-rounded">
-                                            Kategori 4
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="category-contain">
-                                <a href="#">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/5.png" alt="category-img"
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="btn-rounded">
-                                            Kategori 5
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="category-contain">
-                                <a href="#">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/layout-6/rounded-category/6.png" alt="category-img"
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="btn-rounded">
-                                            Kategori 6
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
