@@ -10,7 +10,7 @@ class Product
 
     public function view_product()
     {
-        $api_endpoint = "/product";
+        $api_endpoint = "/product/all";
         $params = "request_type=1";
         $api_request = $this->api_request;
         $request = $api_request->request_post($api_endpoint, $params);
@@ -23,7 +23,7 @@ class Product
 
     public function view_product_categories()
     {
-        $api_endpoint = "/product-category";
+        $api_endpoint = "/product-category/all";
         $params = "request_type=1";
         $api_request = $this->api_request;
         $request = $api_request->request_post($api_endpoint, $params);
