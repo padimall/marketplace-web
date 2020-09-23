@@ -1,5 +1,6 @@
 <?php
 include('api_request.php');
+
 class Product
 {
     public function __construct()
@@ -32,5 +33,9 @@ class Product
             "status" => $request['status'], //memberitahukan status true/false
             "result" => json_decode($request['result'], TRUE)
         );
+    }
+
+    public function view_product_on_product_categories() {
+        
     }
 }

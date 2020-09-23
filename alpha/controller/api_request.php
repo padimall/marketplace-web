@@ -1,5 +1,10 @@
 <?php
+include('./vendor/autoload.php');
 include('./vendor/rmccue/requests/library/Requests.php');
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
 Requests::register_autoloader();
 
 class Api_request
@@ -37,6 +42,11 @@ class Api_request
             "status" => $status,
             "result" => $result
         );
+
+        $log = new Logger('request_post');
+        $log->pushHandler(new StreamHandler('../example.log', Logger::WARNING));
+
+        $log->warning("hallo");
     }
 
     public function request_get($api_endpoint_request, $params)
